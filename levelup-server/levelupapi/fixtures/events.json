@@ -1,0 +1,22 @@
+[
+  {
+    "model": "levelupapi.event",
+    "pk": 1,
+    "fields": {
+      "event_time": "2020-08-28T14:51:39.989Z",
+      "location": "Basement",
+      "game": 1,
+      "gamer": 1
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 2,
+    "fields": {
+      "event_time": "2020-08-28T14:51:50.989Z",
+      "location": "Kyle's House",
+      "game": 2,
+      "gamer": 1
+    }
+  }
+]
