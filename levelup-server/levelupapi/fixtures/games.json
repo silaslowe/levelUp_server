@@ -20,5 +20,16 @@
       "game_type": 2,
       "gamer": 1
     }
+  },
+  {
+    "model": "levelupapi.game",
+    "pk": 3,
+    "fields": {
+      "title": "Silas Doesn't Like Django",
+      "number_of_players": 1,
+      "description": "This is a game where Silas gets sad at Django for being obtuse...",
+      "game_type": 1,
+      "gamer": 1
+    }
   }
 ]
