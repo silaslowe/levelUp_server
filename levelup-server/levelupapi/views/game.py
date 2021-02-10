@@ -21,19 +21,18 @@ class Games(ViewSet):
 
         # Uses the token passed in the `Authorization` header
         gamer = Gamer.objects.get(user=request.auth.user)
-
         # Create a new Python instance of the Game class
         # and set its properties from what was sent in the
         # body of the request from the client.
         game = Game()
         game.title = request.data["title"]
-        game.number_of_players = request.data["numberOfPlayers"]
+        game.number_of_players = request.data["number_of_players"]
         game.description = request.data["description"]
         # Use the Django ORM to get the record from the database
         # whose `id` is what the client passed as the
         # `gameTypeId` in the body of the request.
-        game_type = GameType.objects.get(pk=request.data["gameTypeId"])
-        game.gametype = game_type
+        game_type = GameType.objects.get(pk=request.data["game_type_id"])
+        game.game_type = game_type
         game.gamer = gamer
 
 
