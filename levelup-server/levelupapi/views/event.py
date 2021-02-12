@@ -22,6 +22,7 @@ class Events(ViewSet):
         gamer = Gamer.objects.get(user=request.auth.user)
 
         event = Event()
+        event.event_day = request.data["event_day"]
         event.event_time = request.data["event_time"]
         game = Game.objects.get(pk=request.data["game"])
         event.game = game
@@ -126,7 +127,7 @@ class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
         fields = ('id', 'game', 'gamer',
-                  'location', 'event_time')
+                  'location', 'event_time', 'event_day')
 
 class GameSerializer(serializers.ModelSerializer):
     """JSON serializer for games"""
