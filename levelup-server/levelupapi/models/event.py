@@ -8,4 +8,4 @@ class Event(models.Model):
     game = models.ForeignKey("Game", on_delete=models.CASCADE)
     location = models.CharField(max_length=75)
     gamer = models.ForeignKey("Gamer", on_delete=models.CASCADE)
-
+   
