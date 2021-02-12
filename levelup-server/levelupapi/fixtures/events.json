@@ -3,9 +3,10 @@
     "model": "levelupapi.event",
     "pk": 1,
     "fields": {
-      "event_time": "2020-08-28T14:51:39.989Z",
-      "location": "Basement",
+      "event_day": "2020-10-25",
+      "event_time": "14:30",
       "game": 1,
+      "location": "Basement",
       "gamer": 1
     }
   },
@@ -13,9 +14,10 @@
     "model": "levelupapi.event",
     "pk": 2,
     "fields": {
-      "event_time": "2020-08-28T14:51:50.989Z",
-      "location": "Kyle's House",
+      "event_day": "2021-1-26",
+      "event_time": "12:30",
       "game": 2,
+      "location": "Kyle's House",
       "gamer": 1
     }
   }
