@@ -3,9 +3,9 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "name": "level-up",
-            "database": "${workspaceFolder:levelup-server}/db.sqlite3"
+            "name": "levelup",
+            "database": "db.sqlite3"
         }
     ],
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/Users/silaslowe/.local/share/virtualenvs/levelup-server-80ww3OyL/bin/python"
 }
