@@ -86,9 +86,11 @@ class Games(ViewSet):
         game.number_of_players = request.data["numberOfPlayers"]
         game.description = request.data["description"]
         game_type = GameType.objects.get(pk=request.data["gameTypeId"])
+        game.gamer = gamer
+
+        game_type = GameType.object.get(pk=request.data["game_type"])
         game.game_type = game_type
         game.save()
-        game.gamer = gamer
 
 
         # 204 status code means everything worked but the
